@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="bloodtype">
+
+        <item>A</item>>
+        <item>B</item>>
+        <item>AB</item>>
+        <item>O</item>>
+        <item>unknow</item>>
+    </string-array>
+</resources>

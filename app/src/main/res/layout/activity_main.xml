@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yutzuliu.myapplication.MainActivity">
+
+
+    <Button
+        android:text="create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/nameTx"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameEdt"
+        android:hint="please input your name"
+        android:layout_toRightOf="@id/nameTx"/>
+
+    <TextView
+        android:text="Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/genderTx"
+        android:textSize="18sp"
+        android:layout_below="@+id/nameTx" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/genderTx"
+        android:layout_toRightOf="@+id/genderTx"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:text="Men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            />
+
+        <RadioButton
+            android:text="Women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:text="Blood Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodTx"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/genderTx" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bloodSpn"
+        android:layout_toRightOf="@+id/bloodTx"
+        android:layout_alignTop="@+id/bloodTx"/>
+
+
+    <TextView
+        android:text="BirthDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodTx"
+        android:id="@+id/birthTx"
+        android:textSize="18sp"
+        android:layout_marginTop="11dp"/>
+
+
+    <Button
+        android:text="pick date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/birthTx"
+        android:layout_alignTop="@+id/birthTx"
+        android:id="@+id/birthBtn" />
+
+
+
+    <TextView
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneTx"
+        android:textSize="18sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/birthTx"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:ems="10"
+        android:id="@+id/phoneEdt"
+        android:layout_alignTop="@+id/phoneTx"
+        android:layout_toRightOf="@+id/phoneTx"
+
+        />
+
+    <TextView
+        android:text="E-mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailTx"
+        android:textSize="18sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/phoneTx"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/mailEdt"
+        android:hint="email"
+        android:layout_below="@+id/phoneTx"
+        android:layout_toRightOf="@+id/mailTx"
+        android:layout_alignTop="@+id/mailTx"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label"
+        android:layout_toRightOf="@+id/phoneEdt"
+        android:layout_alignTop="@+id/phoneEdt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2"
+        android:layout_toRightOf="@+id/mailEdt"
+        android:layout_alignTop="@+id/mailEdt" />
+
+    <CheckBox
+        android:text="資料輸入正確"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sureChk"
+        android:layout_alignBaseline="@+id/createBtn"
+        android:layout_alignBottom="@+id/createBtn"
+        android:layout_toLeftOf="@+id/createBtn"
+        android:layout_toStartOf="@+id/createBtn"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+
+
+
+</RelativeLayout>
